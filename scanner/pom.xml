@@ -14,15 +14,15 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
-
-  </properties>
-
   <dependencies>
-
+    <dependency>
+      <groupId>info.picocli</groupId>
+      <artifactId>picocli</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.xiaofeng</groupId>
+      <artifactId>common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
-
-  <build>
-
-  </build>
 </project>
