@@ -41,7 +41,7 @@ public class ScanVisitor extends SimpleFileVisitor<Path> {
                 }
 
                 Entry entry = entries.pop();
-                Entry self = Entry.entryBuilder().current(dir.getFileName()).isFolder(Files.isDirectory(dir)).build();
+                Entry self = Entry.Builder().current(dir.getFileName()).isFolder(Files.isDirectory(dir)).build();
                 entry.getEntries().add(self);
                 entries.push(entry);
                 entries.push(self);
@@ -55,7 +55,7 @@ public class ScanVisitor extends SimpleFileVisitor<Path> {
         FileVisitResult result = super.visitFile(file, attrs);
         if (FileVisitResult.CONTINUE.equals(result)) {
             Entry entry = entries.pop();
-            entry.getEntries().add(Entry.entryBuilder().current(file.getFileName()).build());
+            entry.getEntries().add(Entry.Builder().current(file.getFileName()).build());
             entries.push(entry);
         }
         return result;

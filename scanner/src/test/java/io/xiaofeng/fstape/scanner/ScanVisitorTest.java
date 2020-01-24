@@ -14,9 +14,9 @@ class ScanVisitorTest {
     @Test
     void print() throws IOException {
         Path tmpDir = Paths.get(System.getProperty("java.io.tmpdir"));
-        Entry root = Entry.entryBuilder().current(tmpDir).isFolder(true).build();
+        Entry root = Entry.Builder().current(tmpDir).isFolder(true).build();
         Files.walkFileTree(tmpDir, ScanVisitor.builder().root(root).build());
-        printEntry(root);
+        // printEntry(root);
     }
 
     void printEntry(Entry entry) {

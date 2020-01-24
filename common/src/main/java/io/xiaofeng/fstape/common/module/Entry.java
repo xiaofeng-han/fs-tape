@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-@Builder(builderMethodName = "entryBuilder")
+@Builder(builderMethodName = "Builder")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
