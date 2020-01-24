@@ -10,9 +10,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class ScanVisitorTest {
+class ScanVisitorTest {
     @Test
-    public void print() throws IOException {
+    void print() throws IOException {
         Path tmpDir = Paths.get(System.getProperty("java.io.tmpdir"));
         Entry root = Entry.entryBuilder().current(tmpDir).isFolder(true).build();
         Files.walkFileTree(tmpDir, ScanVisitor.builder().root(root).build());

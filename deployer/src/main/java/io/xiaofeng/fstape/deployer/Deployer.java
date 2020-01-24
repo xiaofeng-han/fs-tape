@@ -1,10 +1,10 @@
-package io.xiaofeng;
+package io.xiaofeng.fstape.deployer;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Deployer
 {
     public static void main( String[] args )
     {

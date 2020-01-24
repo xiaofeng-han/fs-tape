@@ -1,10 +1,10 @@
-package io.xiaofeng;
+package io.xiaofeng.fstape.monitor;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Monitor
 {
     public static void main( String[] args )
     {

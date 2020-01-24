@@ -118,7 +118,15 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
               </path>
+              <path>
+                <groupId>info.picocli</groupId>
+                <artifactId>picocli-codegen</artifactId>
+                <version>${picocli.version}</version>
+              </path>
             </annotationProcessorPaths>
+            <compilerArgs>
+              <arg>-Aproject=${groupId}/${artifactId}</arg>
+            </compilerArgs>
           </configuration>
         </plugin>
         <plugin>

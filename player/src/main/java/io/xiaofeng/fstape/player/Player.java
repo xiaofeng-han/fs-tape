@@ -1,10 +1,10 @@
-package io.xiaofeng;
+package io.xiaofeng.fstape.player;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Player
 {
     public static void main( String[] args )
     {

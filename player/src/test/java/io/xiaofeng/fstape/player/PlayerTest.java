@@ -1,4 +1,4 @@
-package io.xiaofeng;
+package io.xiaofeng.fstape.player;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class PlayerTest
 {
     /**
      * Rigorous Test :-)
